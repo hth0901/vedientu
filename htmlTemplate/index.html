@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Vé tham quan di tích - Trung tâm Bảo tồn di tích cố đô Huế</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/material-icons-full.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="img-fluid"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span></button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Trang chủ</a></li>
+					<li class="nav-item dropdown d-lg-flex">
+						<a href="datve.html" class="nav-link"><span>Đặt vé</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="datve" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="datve">
+							<a class="dropdown-item" href="#">Đặt vé tham quan</a>
+							<a class="dropdown-item" href="#">Hướng dẫn đặt vé</a>
+							<a class="dropdown-item" href="#">Kiểm tra mã đặt vé</a>
+							<a class="dropdown-item" href="#">Chính sách hoàn vé</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown d-lg-flex">
+						<a href="thongtin.html" class="nav-link"><span>Thông tin</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="thongtin" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="thongtin">
+							<a class="dropdown-item" href="#">Giá vé</a>
+							<a class="dropdown-item" href="#">Khuyến mãi</a>
+							<a class="dropdown-item" href="#">Nội quy tham gia</a>
+							<a class="dropdown-item" href="#">Thời gian tham quan</a>
+							<a class="dropdown-item" href="#">Chương trình tour mới</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="dichvu.html" class="nav-link"><span>Dịch vụ</span></a></li>
+					<li class="nav-item"><a href="khampha.html" class="nav-link">Khám phá</a></li>
+					<li class="nav-item"><a href="thongke.html" class="nav-link">Thống kê</a></li>
+					<li class="nav-item"><a href="lienhe.html" class="nav-link"><span>Liên hệ</span></a>
+					</li>
+
+				</ul>
+				<div class="action-nav">
+					<ul>
+						<li>
+							<a class="cart" href="#">
+								<img src="images/icon/cart_white.png" alt="">
+							</a>
+							<a class="cart show" href="#">
+								<img src="images/icon/cart_active.png" alt="">
+								<span class="badge-cart">5</span>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown dropdown-language">
+								<a class="dropdown-toggle language-show" href="#" role="button" id="dropdownlanguage"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="vi-vn active" src="images/icon/vi-VN.png" alt="">
+									<img class="en-us" src="images/icon/en-US.png" alt="">
+								</a>
+
+								<div class="dropdown-menu language-dropdown" aria-labelledby="dropdownlanguage">
+									<div class="form-check">
+										<input class="form-check-input input-vi" type="radio" name="language"
+											id="language1" value="option1" checked>
+										<label class="form-check-label" for="language1">
+											Vietnamese
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input input-en" type="radio" name="language"
+											id="language2" value="option2">
+										<label class="form-check-label" for="language2">
+											English
+										</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown dropdown-user">
+								<a class="dropdown-toggle" href="#" role="button" id="dropdownuser"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="" src="images/icon/account_white.png" alt="">
+									<span class="d-none">Nguyễn Hữu Thành Nam</span>
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="dropdownuser">
+									<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
+									<a class="dropdown-item" href="#"  data-toggle="modal" data-target="#register-modal">Đăng ký</a>
+									<a class="dropdown-item d-none" href="#">Đăng xuất</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- END nav -->
+
+
+	<div class="hero-wrap">
+		<div class="home-slider owl-carousel owl-theme">
+			<a href="#" class="item">
+			<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/dainoi.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Đại Nội Huế</h1>
+				<p>Người ta đến Huế không chỉ thưởng thức những cảnh đẹp lãng mạn, thơ mộng mà nơi đây còn lưu giữ vết tích Đại Nội Huế, chốn cung đình xưa cũ của triều đại nhà Nguyễn ở Việt Nam.</p>
+			  </div>
+			</a>
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/biaquochoc.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Bia Quốc Học</h1>
+				<p>Bia Quốc Học tọa lạc giữa một ngoại cảnh thiên nhiên thơ mộng, nhất là phía sau có dòng sông Hương trong xanh êm ả, giữa một không gian kiến trúc độc đáo.</p>
+			  </div>
+			</a>
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/langtuduc.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Lăng Vua Tự Đức</h1>
+				<p>Lăng Tự Đức với vẻ nhã nhặn, nằm trong khung cảnh sơn thủy hữu tình được đánh giá là một trong những công trình kiến trúc lăng tẩm đẹp nhất thời Nguyễn ở thế kỷ 19.</p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/chuathienmu.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Chùa Thiên Mụ</h1>
+				<p>Huế - Nơi lưu giữ trọn vẹn nhất cái hồn, cái sắc của nền văn hóa dân tộc. Trong đó, chùa Thiên Mụ Huế được ví như “linh hồn” của mảnh đất này.</p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/langthieutri.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Lăng vua Thiệu Trị</h1>
+				<p>Lăng Thiệu Trị - Ấn tượng vẻ đẹp độc đáo tại nơi an nghỉ của vị vua hiếu thảo, tài hoa bậc nhất triều Nguyễn. Luôn là điểm đến giàu giá trị lịch sử, thu hút được đông đảo các tín đồ xê dịch ghé thăm khi tới cố đô.</p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/langtuduc.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Lăng Vua Tự Đức</h1>
+				<p>Lăng Tự Đức với vẻ nhã nhặn, nằm trong khung cảnh sơn thủy hữu tình được đánh giá là một trong những công trình kiến trúc lăng tẩm đẹp nhất thời Nguyễn ở thế kỷ 19.</p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/phuvanlau.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Phu Văn Lâu</h1>
+				<p>Nằm ngay sát bờ sông Hương, ở phía trước Kỳ Đài và phía sau Nghênh Lương Đình, Phu Văn Lâu tuy là một công trình kiến trúc nhỏ nhưng lại mang ý nghĩa sâu sắc về lịch sử lẫn văn hóa. </p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/langtuduc.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Lăng Vua Tự Đức</h1>
+				<p>Lăng Tự Đức với vẻ nhã nhặn, nằm trong khung cảnh sơn thủy hữu tình được đánh giá là một trong những công trình kiến trúc lăng tẩm đẹp nhất thời Nguyễn ở thế kỷ 19.</p>
+			  </div>
+			</a>
+
+			<a href="#" class="item">
+				<div class="overlay"></div>
+			  <div class="img_bg" style="background-image: url('images/slide/cautruongtien.jpg');"></div>
+			  <div class="slider-content">
+				<h1>Cầu Trường Tiền</h1>
+				<p>Cầu Tràng Tiền - biểu tượng của xứ Huế là cây cầu bắc ngang qua dòng sông Hương. Cây cầu này là nơi đã chứng kiến những thăng trầm xuyên suốt lịch sử của đất nước.</p>
+			  </div>
+			</a>
+
+		  </div>
+		  <div class="ftco-section form-section">
+			<div class="container">
+				<div class="slider-text" data-scrollax-parent="true">
+					<div class="slider-text-container ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+						<h3>Chào mừng đến với Huế!</h3>
+						<p>Đặt vé tham quan trực tuyến thuận tiện, nhanh chóng.</p>
+						<div class="block-17 form-search">
+							<form action="" method="post" class="">
+								<div class="form-row fields">									
+									<div class="col-6 col-lg-12">
+										<label>Điểm tham quan</label>
+										<div class="select-wrap one-third">
+											<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+											<select name="" id="" class="form-control" placeholder="Chọn điểm tham quan">
+												<option value="">Đại Nội Huế</option>
+												<option value="">Lăng Minh Mạng</option>
+												<option value="">Lăng Tự Đức</option>
+												<option value="">Lăng Khải Định</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-4 col-6">
+										<label>Ngày tham quan</label>
+										<input type="text" id="checkin_date" class="form-control" placeholder="Date from">
+									</div>
+									<div class="col-lg-4 col-6">
+										<label>Người lớn</label>
+										<div class="select-wrap one-third">
+											<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+											<select name="" id="" class="form-control" placeholder="Chọn số lượng">
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-4 col-6">
+										<label>Trẻ em (Từ 7 - 12 tuổi)</label>
+										<div class="select-wrap one-third">
+											<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+											<select name="" id="" class="form-control" placeholder="Chọn số lượng">
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<input type="submit" class="search-submit btn btn-primary" value="Đặt vé">
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="content-wrap">
+		
+
+		<section class="ftco-section ftco-destination">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-12 heading-section ftco-animate">						
+						<h4 class="">Khám phá <span>di sản</span></h4>
+						<span class="subheading">Huế là vùng đất được mệnh danh là xứ sở của di sản, được UNESCO vinh danh.</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="destination-slider owl-carousel ftco-animate">
+							<div class="item">
+								<div class="content">
+									<div class="content-border"></div>
+									<div class="content-container">
+										<div class="content-overlay"></div>
+										<div class="content-image" style="background-image: url('images/destination/DaiNoi.jpg')">
+											<h5>Đại Nội Huế</h5>
+										</div>
+										<div class="content-details fadeIn-top">
+											<h3>Đại Nội Huế</h3>
+											<p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy
+												niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa
+												nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+											<a href="#" class="btn btn-outline-light">Xem chi tiết</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content">
+									<div class="content-border"></div>
+									<div class="content-container">
+										<div class="content-overlay"></div>
+										<div class="content-image" style="background-image: url('images/destination/detail4.jpg')">
+											<h5>Lăng Vua Tự Đức</h5>
+										</div>
+										<div class="content-details fadeIn-top">
+											<h3>Lăng Vua Tự Đức</h3>
+											<p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy
+												niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa
+												nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+											<a href="#" class="btn btn-outline-light">Xem chi tiết</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content">
+									<div class="content-border"></div>
+									<div class="content-container">
+										<div class="content-overlay"></div>
+										<div class="content-image" style="background-image: url('images/destination/MinhMang.jpg')">
+											<h5>Lăng Vua Minh Mạng</h5>
+										</div>
+										<div class="content-details fadeIn-top">
+											<h3>Lăng Vua Minh Mạng</h3>
+											<p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy
+												niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa
+												nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+											<a href="#" class="btn btn-outline-light">Xem chi tiết</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content">
+									<div class="content-border"></div>
+									<div class="content-container">
+										<div class="content-overlay"></div>
+										<div class="content-image" style="background-image: url('images/destination/event-7.jpg')">
+											<h5>Đại Nội Huế</h5>
+										</div>
+										<div class="content-details fadeIn-top">
+											<h3>Đại Nội Huế</h3>
+											<p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy
+												niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa
+												nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+											<a href="#" class="btn btn-outline-light">Xem chi tiết</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content">
+									<div class="content-border"></div>
+									<div class="content-container">
+										<div class="content-overlay"></div>
+										<div class="content-image" style="background-image: url('images/destination/DaiNoi.jpg')">
+											<h5>Đại Nội Huế</h5>
+										</div>
+										<div class="content-details fadeIn-top">
+											<h3>Đại Nội Huế</h3>
+											<p>Tháng 2 năm 1820 vua Gia Long băng hà, hoàng tử thứ tư là Nguyễn Phúc Đảm được đưa lên ngai vàng, lấy
+												niên hiệu là Minh Mạng. Vua Minh Mạng là người có nhiều đóng góp đối với công việc mở mang đất nước, đưa
+												nước Đại Nam lên hàng mạnh nhất trong các quốc gia Đông Nam Á lúc bấy giờ.</p>
+											<a href="#" class="btn btn-outline-light">Xem chi tiết</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg-envent.png);">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 heading-section heading-section-white ftco-animate">
+						<h4 class="">Sự kiện <span>Nổi bật</span></h4>
+						<span class="subheading">Các sự kiện nổi bật hấp dẫn diễn ra trong năm 2022 tại cố đô Huế</span>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-md-6  ftco-animate">
+								<a href="#" class="block-event">
+									<div class="block-col-1">
+										<div class="bg-img" style="background-image:url('images/event/Festval-Hue.jpg')"></div>
+										<div class="time-wrap" id="timer">
+											<div class="item-timer" id="days"></div>
+											<div class="item-timer" id="hours"></div>
+											<div class="item-timer" id="minutes"></div>
+											<div class="item-timer" id="seconds"></div>
+										</div>
+									</div>
+									<div class="block-col-2">
+										<div class="label-meta happenning">Đang diễn ra</div>
+										<div class="description-event">
+											<h5>Festival Huế 2022 - Di sản văn hóa với hội nhập và phát triển</h5>
+											<p class="time-event">
+												<img src="images/icon/calendar.png" width="16" alt=""> Từ <span>25/06/2022</span> Đến <span>30/06/2022</span>
+											</p>
+											<p class="place-event"><img src="images/icon/location.png" width="16" alt=""> Tỉnh Thừa Thiên Huế</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6  ftco-animate">
+								<a href="#" class="block-event">
+									<div class="block-col-1">
+										<div class="bg-img" style="background-image:url('images/event/MT&DS-1.jpg')"></div>
+										<div class="time-wrap" id="timer1">
+											<div class="item-timer" id="days1"></div>
+											<div class="item-timer" id="hours1"></div>
+											<div class="item-timer" id="minutes1"></div>
+											<div class="item-timer" id="seconds1"></div>
+										</div>
+									</div>
+									<div class="block-col-2">
+										<div class="label-meta upcoming">Sắp diễn ra</div>
+										<div class="description-event">
+											<h5>Lễ hội đèn lồng cố đô</h5>
+											<p class="time-event">
+												<img src="images/icon/calendar.png" width="16" alt=""> Từ <span>03/09/2022</span> Đến <span>18/09/2022</span>
+											</p>
+											<p class="place-event"><img src="images/icon/location.png" width="16" alt=""> Thành phố Huế</p>
+										</div>
+									</div>
+								</a>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-service">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-12 heading-section ftco-animate">						
+						<h4 class="">Các loại hình <span>dịch vụ</span></h4>
+						<span class="subheading">Hỗ trợ cho du khách trải nghiệm các dịch vụ và tiện ích khi tham quan các điểm di tích ở Huế.</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="service-slider owl-carousel ftco-animate">
+							<div class="item">
+								<a href="#" class="service">
+									<div class="service-container">
+										<div class="service-image bg-img" style="background-image: url('images/service/service1.png')"></div>
+										<div class="service-details">
+											<img src="images/icon/vr.png" height="60" width="60" alt="">
+											<h5>Trải nghiệm thực tế ảo vr</h5>
+											<p>Những hình ảnh của kinh thành thời Nguyễn được hiện ra đầy đủ, rõ nét sinh động cùng với những hoạt động, nghi thức hàng ngày trong hoàng cung hàng trăm năm trước.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							
+							<div class="item">
+								<a href="#" class="service">
+									<div class="service-container">
+										<div class="service-image bg-img" style="background-image: url('images/service/service2.png')"></div>
+										<div class="service-details">
+											<img src="images/icon/audio.png" height="60" width="60" alt="">
+											<h5>Audio Guide</h5>
+											<p>Dịch vụ thuyết minh tự động (Audio guide) là ứng dụng công nghệ điện tử hỗ trợ tự động hóa việc thuyết minh cho khách tham quan, nhất là khách lẻ quốc tế và khách sử dụng ngôn ngữ hiếm.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="service">
+									<div class="service-container">
+										<div class="service-image bg-img" style="background-image: url('images/service/service3.png')"></div>
+										<div class="service-details">
+											<img src="images/icon/careco.png" height="60" width="60" alt="">
+											<h5>Xe điện</h5>
+											<p>Để tạo điều kiện cho du khách có cơ hội tham quan khu vực xung quanh Đại Nội và tất cả các điểm du lịch bên trong Đại Nội mà không mất nhiều thời gian.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="service">
+									<div class="service-container">
+										<div class="service-image bg-img" style="background-image: url('images/service/service4.png')"></div>
+										<div class="service-details">
+											<img src="images/icon/photo.png" height="60" width="60" alt="">
+											<h5>Chụp ảnh cổ trang</h5>
+											<p>Bên trong Hoàng cung Huế có tổ chức chụp ảnh lưu niệm cho du khách tham quan dưới trang phục thái thượng hoàng, vua, hoàng hậu, công chúa, hoàng tử và cung phi. </p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="item">
+								<a href="#" class="service">
+									<div class="service-container">
+										<div class="service-image bg-img" style="background-image: url('images/service/service1.png')"></div>
+										<div class="service-details">
+											<img src="images/icon/vr.png" height="60" width="60" alt="">
+											<h5>Không gian trình diễn nghề truyền thống Huế</h5>
+											<p>Tôn tạo, phục dựng và giới thiệu các ngành nghề thủ công truyền thống từng có dưới thời nhà Nguyễn, các nghề truyền thống Huế, trong không gian phủ Nội Vụ - Đại Nội Huế</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-adv">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="adv-container">
+							<a class="adv-item">
+								<img src="images/adv/adv1.png" alt="">
+							</a>
+							<a class="adv-item">
+								<img src="images/adv/adv2.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="blog-container">
+							<div class="row">
+								<div class="col-md-1">
+									<div class="main-title">
+										<h2 class="title-rotate">
+											Có thể bạn <span>quan tâm!</span>
+										</h2>
+									</div>
+								</div>
+								<div class="col-md-11">
+									<div class="blog-slider owl-carousel ftco-animate">
+										<div class="item">
+											<div class="blog">
+												<div class="blog-item">
+													<div class="blog-image bg-img" style="background-image: url('images/blog/blog1.png')"></div>
+													<div class="blog-details">
+														<h5>Tịnh cư Cát Tường Quân: Điểm đến thú vị của xứ Huế</h5>
+														<p>Nằm cạnh đồi thông Thiên An vi vu gió lộng, tịnh cư Cát Tường Quân mang nét tinh tế, sang trọng của xứ Huế kinh kỳ, lại hòa mình vào tổng thể thiên nhiên với cây xanh, rêu, đá, hoa, trái, nước... như một phần quan trọng làm nên sự hoàn chỉnh cho không gian kiến trúc, vừa trở thành không gian trải nghiệm hấp dẫn dành cho du khách.</p>
+														<a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="blog">
+												<div class="blog-item">
+													<div class="blog-image bg-img" style="background-image: url('images/blog/blog2.jpg')"></div>
+													<div class="blog-details">
+														<h5>“Âm sắc Huế” – đêm nghệ thuật đặc sắc</h5>
+														<p>Tối 16/4, tại Đại Nội Huế, Trung tâm Bảo tồn Di tích Cố đô Huế đã tổ chức chương trình nghệ thuật “Âm sắc Huế”.</p>
+														<a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+	
+
+	<section class="ftco-section-parallax">
+		<div class="parallax-img d-flex align-items-center">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-9 heading-section heading-section-white ftco-animate">
+						<h2>Tư vấn chuyên nghiệp, tận tình</h2>
+						<p>Với đội ngũ nhân viên nhiều kinh nghiệm, am hiểu các điểm đến chúng tôi luôn sẵn sàng hỗ trợ và tư vấn mọi thông tin liên quan đến nhu cầu du lịch, tham quan của Quý khách!</p>						
+					</div>
+					<div class="col-md-3 img-section">
+						<img src="images/icon/hotline.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<a href="index.html" class="ftco-heading-2"><img src="images/logofooter.png" alt=""></a>
+							<h6>Liên kết với chúng tôi</h6>
+							<ul class="ftco-footer-social list-unstyled">
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/fb.png" alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/twitter.png" alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/instagram.png" alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/youtube.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Liên kết</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Khám phá Huế</a></li>
+								<li><a href="#" class="d-block">Visit Huế</a></li>
+								<li><a href="#" class="d-block">Cổng TTBTDT Cố đô Huế</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Điều khoản sử dụng</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Điều khoản chung</a></li>
+								<li><a href="#" class="d-block">Điều khoản giao dịch</a></li>
+								<li><a href="#" class="d-block">Chính sách bảo mật</a></li>
+								<li><a href="#" class="d-block">How it works</a></li>
+								<li><a href="#" class="d-block">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Thông tin</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Chương trình khuyến mãi</a></li>
+								<li><a href="#" class="d-block">Bản đồ các điểm đến</a></li>
+								<li><a href="#" class="d-block">Giá vé tham quan</a></li>
+								<li><a href="#" class="d-block">Thời gian/Nội quy tham quan</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-md-9">
+						<p>
+							Bản quyền Website thuộc về Trung tâm Bảo tồn Di tích Cố đô Huế<br/>
+							Địa chỉ: Tam Toà, 23 Tống Duy Tân - thành phố Huế, Việt Nam<br/>
+							Email: huedisan@gmail.com
+						</p>
+					</div>
+					<div class="col-md-3 text-right">
+						<img src="images/logobct.png" alt="" class="img-active">
+						<div class="copyright-pane">
+							<div class="tooltip_constrast">
+								<img alt="" style="width: 30px; height: 30px;" src="images/icon/hotrokhuyettat.svg">
+								<input class="tooltiptext" id="myRange" min="0" max="200" onchange="showVal(this.value)" type="range">
+							</div>
+							<div class="copyright">
+								Thiết kế và xây dựng: <a target="_blank" href="www.huecit.vn">HueCIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal Login -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="container modal-dialog modal-dialog-centered" role="document">
+			
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<img src="images/icon/close-modal.png" alt="">
+				</button>
+				<div class="modal-body">
+					<div class="login-container">
+						<div class="row">
+							<div class="col-lg-5">
+								<form class="form-login form-box">
+									<h2 class="heading2 text-primary text-center text-uppercase">Đăng nhập tài khoản</h2>
+									<div class="form-group">
+									  <label for="emaillogin">Email</label>
+									  <input type="email" class="form-control" id="emaillogin" aria-describedby="emailHelp" placeholder="Nhập email">
+									</div>
+									<div class="form-group">
+									  <label for="passwordlogin">Mật khẩu</label>
+									  <input type="password" class="form-control" id="passwordlogin" placeholder="Nhập mật khẩu">
+									</div>
+									<div class="form-group d-flex justify-content-between">
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="forgotcheck">
+											<label class="form-check-label" for="forgotcheck">Ghi nhớ tài khoản</label>
+										</div>
+										<a href="#" class="forgot-pw text-decoration text-primary">Quên mật khẩu?</a>
+									</div>
+									<button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+									<p class="label-register">
+										Bạn chưa có tài khoản? <a class="text-decoration text-primary" href="#register-modal">Đăng ký</a>
+									</p>
+								  </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Register -->
+	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="container modal-dialog modal-dialog-centered" role="document">
+			
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<img src="images/icon/close-modal.png" alt="">
+				</button>
+				<div class="modal-body">
+					<div class="login-container">
+						<div class="row">
+							<div class="col-lg-5">
+								<form class="form-login form-box">
+									<h2 class="heading2 text-primary text-center text-uppercase">Đăng ký tài khoản</h2>
+									<div class="form-group">
+										<label for="fullname">Họ và tên</label>
+										<input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp" placeholder="Nhập họ tên">
+									  </div>
+									<div class="form-group">
+									  <label for="emaillogin">Email</label>
+									  <input type="email" class="form-control" id="emaillogin" aria-describedby="emailHelp" placeholder="Nhập email">
+									</div>
+									<div class="form-group">
+									  <label for="passwordlogin">Mật khẩu</label>
+									  <input type="password" class="form-control" id="passwordlogin" placeholder="Nhập mật khẩu">
+									</div>
+									<div class="form-group">
+										<label for="passwordlogin1">Nhập lại mật khẩu</label>
+										<input type="password" class="form-control" id="passwordlogin1" placeholder="Nhập lại mật khẩu">
+									  </div>
+									
+									<button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+									<p class="label-register">
+										Đã có tài khoản? <a class="text-decoration text-primary" href="#register-modal">Đăng nhập</a>
+									</p>
+								  </form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function resize() {
+			// var heroHeight = $('.hero-wrap').outerHeight(true);
+			// var destinationHeight = $('.ftco-destination .heading-section').outerHeight(true);
+			// var contentImageHeight = $(".content-image");
+			// var heights = window.innerHeight - heroHeight -destinationHeight - 135;
+			// for(var i=0;i<contentImageHeight.length;i++){
+			// 	contentImageHeight[i].style.height = heights + "px";
+			// }
+
+			var imgWidth = $('.content-image').width();
+			var heightimg = $(".content-image");
+			var heights = imgWidth/0.825;
+			//var widths =  heights*0.825;
+			for(var i=0;i<heightimg.length;i++){
+				heightimg[i].style.height = heights + "px";
+				//heightimg[i].style.width = widths + "px";
+			}
+	
+			var imgWidth1 = $('.block-event .bg-img').width();
+			var heightimg1 = $(".block-event .bg-img");
+			var heights1 = imgWidth1/1.398;
+			for(var i=0;i<heightimg1.length;i++){
+				heightimg1[i].style.height = heights1 + "px";
+			}
+	
+			var imgWidth2 = $('.service-image').width();
+			var heightimg2 = $(".service-image");
+			var heightimgcontent = $(".service-details");
+			for(var i=0;i<heightimg2.length;i++){
+				heightimg2[i].style.height = imgWidth2 + "px";
+			}
+			for(var i=0;i<heightimgcontent.length;i++){
+				heightimgcontent[i].style.height = imgWidth2 + "px";
+			}
+			
+			var imgHeight3 = $('.blog-details').outerHeight(true);
+			var heightimg3 = $(".blog-image");
+			var heights3 = imgHeight3;
+			if($( window ).width() > 991.98){
+				for(var i=0;i<heightimg3.length;i++){
+					heightimg3[i].style.height = heights3 + "px";
+				}		
+			}
+			
+			// var mainHeight = $('.main-content').height();
+			// var heightimg = $(".div-right .div-img a");
+			// var heights = mainHeight;
+			// for(var i=0;i<heightimg.length;i++){
+			// 	heightimg[i].style.height = heights + "px";
+			// }
+			
+	
+	
+		}
+		$(document).ready(function () {
+			window.addEventListener("resize", resize);
+			window.onresize = function () {
+				resize();
+			};
+				resize();
+		});
+	
+		
+		function makeTimer() {
+
+				var endTime = new Date("30 June 2022 23:59:59 GMT+07:00");
+				endTime = (Date.parse(endTime) / 1000);
+
+				var now = new Date();
+				now = (Date.parse(now) / 1000);
+
+				var timeLeft = endTime - now;
+
+				var days = Math.floor(timeLeft / 86400);
+				var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+				var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+				var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+				if (hours < "10") { hours = "0" + hours; }
+				if (minutes < "10") { minutes = "0" + minutes; }
+				if (seconds < "10") { seconds = "0" + seconds; }
+
+				$("#days").html(days + "<span>Ngày</span>");
+				$("#hours").html(hours + "<span>Giờ</span>");
+				$("#minutes").html(minutes + "<span>Phút</span>");
+				$("#seconds").html(seconds + "<span>Giây</span>");
+
+				var endTime1 = new Date("18 September 2022 23:59:59 GMT+07:00");
+				endTime1 = (Date.parse(endTime1) / 1000);				
+
+
+				var timeLeft1 = endTime1 - now;
+
+				var days1 = Math.floor(timeLeft1 / 86400);
+				var hours1 = Math.floor((timeLeft1 - (days1 * 86400)) / 3600);
+				var minutes1 = Math.floor((timeLeft1 - (days1 * 86400) - (hours1 * 3600)) / 60);
+				var seconds1 = Math.floor((timeLeft1 - (days1 * 86400) - (hours1 * 3600) - (minutes1 * 60)));
+
+				if (hours1 < "10") { hours1 = "0" + hours1; }
+				if (minutes1 < "10") { minutes1 = "0" + minutes1; }
+				if (seconds1 < "10") { seconds1 = "0" + seconds1; }
+
+				$("#days1").html(days1 + "<span>Ngày</span>");
+				$("#hours1").html(hours1 + "<span>Giờ</span>");
+				$("#minutes1").html(minutes1 + "<span>Phút</span>");
+				$("#seconds1").html(seconds1 + "<span>Giây</span>");
+
+			}
+
+			setInterval(function () { makeTimer(); }, 1000);
+
+
+			function showVal(newVal) {
+		document.getElementsByTagName("body")[0].setAttribute('style', 'color:blue;filter: brightness(' + newVal + '%);');
+	}
+	
+	</script>
+</body>
+
+</html>

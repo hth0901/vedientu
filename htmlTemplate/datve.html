@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Đặt vé - Trung tâm Bảo tồn di tích cố đô Huế</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/material-icons-full.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="img-fluid"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span></button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+					<li class="nav-item active dropdown d-lg-flex">
+						<a href="datve.html" class="nav-link"><span>Đặt vé</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="datve" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="datve">
+							<a class="dropdown-item" href="#">Đặt vé tham quan</a>
+							<a class="dropdown-item" href="#">Hướng dẫn đặt vé</a>
+							<a class="dropdown-item" href="#">Kiểm tra mã đặt vé</a>
+							<a class="dropdown-item" href="#">Chính sách hoàn vé</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown d-lg-flex">
+						<a href="thongtin.html" class="nav-link"><span>Thông tin</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="thongtin" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="thongtin">
+							<a class="dropdown-item" href="#">Giá vé</a>
+							<a class="dropdown-item" href="#">Khuyến mãi</a>
+							<a class="dropdown-item" href="#">Nội quy tham gia</a>
+							<a class="dropdown-item" href="#">Thời gian tham quan</a>
+							<a class="dropdown-item" href="#">Chương trình tour mới</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="dichvu.html" class="nav-link"><span>Dịch vụ</span></a></li>
+					<li class="nav-item"><a href="khampha.html" class="nav-link">Khám phá</a></li>
+					<li class="nav-item"><a href="thongke.html" class="nav-link">Thống kê</a></li>
+					<li class="nav-item"><a href="lienhe.html" class="nav-link"><span>Liên hệ</span></a>
+					</li>
+
+				</ul>
+				<div class="action-nav">
+					<ul>
+						<li>
+							<a class="cart" href="#">
+								<img src="images/icon/cart_white.png" alt="">
+							</a>
+							<a class="cart show" href="#">
+								<img src="images/icon/cart_active.png" alt="">
+								<span class="badge-cart">5</span>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown dropdown-language">
+								<a class="dropdown-toggle language-show" href="#" role="button" id="dropdownlanguage"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="vi-vn active" src="images/icon/vi-VN.png" alt="">
+									<img class="en-us" src="images/icon/en-US.png" alt="">
+								</a>
+
+								<div class="dropdown-menu language-dropdown" aria-labelledby="dropdownlanguage">
+									<div class="form-check">
+										<input class="form-check-input input-vi" type="radio" name="language"
+											id="language1" value="option1" checked>
+										<label class="form-check-label" for="language1">
+											Vietnamese
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input input-en" type="radio" name="language"
+											id="language2" value="option2">
+										<label class="form-check-label" for="language2">
+											English
+										</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown dropdown-user">
+								<a class="dropdown-toggle" href="#" role="button" id="dropdownuser"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="d-none" src="images/icon/account_white.png" alt="">
+									<span class="">Nguyễn Hữu Thành Nam</span>
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="dropdownuser">
+									<a class="dropdown-item d-none" href="#">Đăng nhập</a>
+									<a class="dropdown-item d-none" href="#">Đăng ký</a>
+									<a class="dropdown-item" href="#">Đăng xuất</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- END nav -->
+
+
+	<div class="hero-wrap hero-content" style="background-image: url('images/order/banner-content.png');">
+		
+
+	</div>
+	<div class="content-wrap content-order">
+		<div class="ftco-section ftco-step form-top">
+			<div class="container">
+				<div class="row no-gutters slider-text">
+					<div class="col-12 ftco-animate">						
+						<div class="block-7 step-order">
+							<div class="step-content">
+								<ul class="slider-step">
+									<li class="active current body-1">
+										<span>01</span>
+										<p>Chọn điểm di tích</p>
+									</li>
+									<li class="body-1">
+										<span>02</span>
+										<p>Đặt vé</p>
+									</li>
+									<li class="body-1">
+										<span>03</span>
+										<p>Thanh toán</p>
+									</li>
+									<li class="body-1">
+										<span>04</span>
+										<p>Hoàn tất</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="ftco-section ftco-destination-order">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-12 search-section ftco-animate">
+						<div class="input-group">
+						  <input type="text" class="form-control" placeholder="Tìm điểm đến..." aria-label="Tìm điểm đến..." aria-describedby="searchdestination">
+						  <div class="input-group-append">
+							<a href="#" class="input-group-text" id="searchdestination"><img src="images/icon/search.png" alt=""></a>
+						  </div>
+						</div>
+					  </div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="destination-order row">
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination1">
+									<label for="destination1"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/MinhMang.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination2">
+									<label for="destination2"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/DaiNoi.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination3">
+									<label for="destination3"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/detail4.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination4">
+									<label for="destination4"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/event-7.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination1">
+									<label for="destination1"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/MinhMang.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination2">
+									<label for="destination2"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/DaiNoi.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination3">
+									<label for="destination3"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/detail4.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination4">
+									<label for="destination4"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/event-7.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination1">
+									<label for="destination1"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/MinhMang.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination2">
+									<label for="destination2"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/DaiNoi.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination3">
+									<label for="destination3"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/detail4.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+							<div class="order-item col-md-3 col-sm-6">
+								<div class="order-container">									
+									<input type="checkbox" id="destination4">
+									<label for="destination4"></label>
+									<a href="#" class="bg-img" style="background-image:url('images/destination/event-7.jpg')">
+										<p class="content-overlay"></p>
+										<p class="content-info">
+											<span class="title-destination">Lăng vua Minh Mạng</span>
+											<span>Từ <b>50.000</b> VNĐ/Người</span>
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="action-order">
+				<div class="container">
+					<div class="action-container">
+						<div class="action-left">
+							<label>Giá vé:</label>
+							<span>Từ <span>350.000</span> VNĐ/Người</span>
+						</div>
+						<div class="action-right">
+							<a href="#" class="btn btn-primary">Đặt ngay</a>
+							<a href="" class="btn btn-outline-primary">Thêm vào giỏ hàng</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+	</div>
+
+
+
+
+	<section class="ftco-section-parallax">
+		<div class="parallax-img d-flex align-items-center">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-9 heading-section heading-section-white ftco-animate">
+						<h2>Tư vấn chuyên nghiệp, tận tình</h2>
+						<p>Với đội ngũ nhân viên nhiều kinh nghiệm, am hiểu các điểm đến chúng tôi luôn sẵn sàng hỗ trợ
+							và tư vấn mọi thông tin liên quan đến nhu cầu du lịch, tham quan của Quý khách!</p>
+					</div>
+					<div class="col-md-3 img-section">
+						<img src="images/icon/hotline.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<a href="index.html" class="ftco-heading-2"><img src="images/logofooter.png" alt=""></a>
+							<h6>Liên kết với chúng tôi</h6>
+							<ul class="ftco-footer-social list-unstyled">
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/fb.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/twitter.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/instagram.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/youtube.png"
+											alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Liên kết</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Khám phá Huế</a></li>
+								<li><a href="#" class="d-block">Visit Huế</a></li>
+								<li><a href="#" class="d-block">Cổng TTBTDT Cố đô Huế</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Điều khoản sử dụng</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Điều khoản chung</a></li>
+								<li><a href="#" class="d-block">Điều khoản giao dịch</a></li>
+								<li><a href="#" class="d-block">Chính sách bảo mật</a></li>
+								<li><a href="#" class="d-block">How it works</a></li>
+								<li><a href="#" class="d-block">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Thông tin</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Chương trình khuyến mãi</a></li>
+								<li><a href="#" class="d-block">Bản đồ các điểm đến</a></li>
+								<li><a href="#" class="d-block">Giá vé tham quan</a></li>
+								<li><a href="#" class="d-block">Thời gian/Nội quy tham quan</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-md-9">
+						<p>
+							Bản quyền Website thuộc về Trung tâm Bảo tồn Di tích Cố đô Huế<br />
+							Địa chỉ: Tam Toà, 23 Tống Duy Tân - thành phố Huế, Việt Nam<br />
+							Email: huedisan@gmail.com
+						</p>
+					</div>
+					<div class="col-md-3 text-right">
+						<img src="images/logobct.png" alt="" class="img-active">
+						<div class="copyright-pane">
+							<div class="tooltip_constrast">
+								<img alt="" style="width: 30px; height: 30px;" src="images/icon/hotrokhuyettat.svg">
+								<input class="tooltiptext" id="myRange" min="0" max="200" onchange="showVal(this.value)"
+									type="range">
+							</div>
+							<div class="copyright">
+								Thiết kế và xây dựng: <a target="_blank" href="www.huecit.vn">HueCIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function resize() {
+			
+
+			var imgWidth = $('.order-container .bg-img').width();
+			var heightimg = $(".order-container .bg-img");
+			var heights = imgWidth / 0.825;
+			for (var i = 0; i < heightimg.length; i++) {
+				heightimg[i].style.height = heights + "px";
+			}
+
+			
+
+
+
+		}
+		$(document).ready(function () {
+			window.addEventListener("resize", resize);
+			window.onresize = function () {
+				resize();
+			};
+			resize();
+		});
+
+
+		function makeTimer() {
+
+			var endTime = new Date("30 June 2022 23:59:59 GMT+07:00");
+			endTime = (Date.parse(endTime) / 1000);
+
+			var now = new Date();
+			now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400);
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<span>Ngày</span>");
+			$("#hours").html(hours + "<span>Giờ</span>");
+			$("#minutes").html(minutes + "<span>Phút</span>");
+			$("#seconds").html(seconds + "<span>Giây</span>");
+
+			var endTime1 = new Date("18 September 2022 23:59:59 GMT+07:00");
+			endTime1 = (Date.parse(endTime1) / 1000);
+
+
+			var timeLeft1 = endTime1 - now;
+
+			var days1 = Math.floor(timeLeft1 / 86400);
+			var hours1 = Math.floor((timeLeft1 - (days1 * 86400)) / 3600);
+			var minutes1 = Math.floor((timeLeft1 - (days1 * 86400) - (hours1 * 3600)) / 60);
+			var seconds1 = Math.floor((timeLeft1 - (days1 * 86400) - (hours1 * 3600) - (minutes1 * 60)));
+
+			if (hours1 < "10") { hours1 = "0" + hours1; }
+			if (minutes1 < "10") { minutes1 = "0" + minutes1; }
+			if (seconds1 < "10") { seconds1 = "0" + seconds1; }
+
+			$("#days1").html(days1 + "<span>Ngày</span>");
+			$("#hours1").html(hours1 + "<span>Giờ</span>");
+			$("#minutes1").html(minutes1 + "<span>Phút</span>");
+			$("#seconds1").html(seconds1 + "<span>Giây</span>");
+
+		}
+
+		setInterval(function () { makeTimer(); }, 1000);
+
+
+		function showVal(newVal) {
+			document.getElementsByTagName("body")[0].setAttribute('style', 'color:blue;filter: brightness(' + newVal + '%);');
+		}
+
+	</script>
+</body>
+
+</html>

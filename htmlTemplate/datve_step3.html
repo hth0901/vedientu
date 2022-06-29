@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>Đặt vé - Trung tâm Bảo tồn di tích cố đô Huế</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/material-icons-full.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="img-fluid"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span></button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+					<li class="nav-item active dropdown d-lg-flex">
+						<a href="datve.html" class="nav-link"><span>Đặt vé</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="datve" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="datve">
+							<a class="dropdown-item" href="#">Đặt vé tham quan</a>
+							<a class="dropdown-item" href="#">Hướng dẫn đặt vé</a>
+							<a class="dropdown-item" href="#">Kiểm tra mã đặt vé</a>
+							<a class="dropdown-item" href="#">Chính sách hoàn vé</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown d-lg-flex">
+						<a href="thongtin.html" class="nav-link"><span>Thông tin</span></a>
+						<a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="thongtin" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							data-reference="parent"><span class="sr-only">Submenu</span></a>
+						<div class="dropdown-menu" aria-labelledby="thongtin">
+							<a class="dropdown-item" href="#">Giá vé</a>
+							<a class="dropdown-item" href="#">Khuyến mãi</a>
+							<a class="dropdown-item" href="#">Nội quy tham gia</a>
+							<a class="dropdown-item" href="#">Thời gian tham quan</a>
+							<a class="dropdown-item" href="#">Chương trình tour mới</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="dichvu.html" class="nav-link"><span>Dịch vụ</span></a></li>
+					<li class="nav-item"><a href="khampha.html" class="nav-link">Khám phá</a></li>
+					<li class="nav-item"><a href="thongke.html" class="nav-link">Thống kê</a></li>
+					<li class="nav-item"><a href="lienhe.html" class="nav-link"><span>Liên hệ</span></a>
+					</li>
+
+				</ul>
+				<div class="action-nav">
+					<ul>
+						<li>
+							<a class="cart" href="#">
+								<img src="images/icon/cart_white.png" alt="">
+							</a>
+							<a class="cart show" href="#">
+								<img src="images/icon/cart_active.png" alt="">
+								<span class="badge-cart">5</span>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown dropdown-language">
+								<a class="dropdown-toggle language-show" href="#" role="button" id="dropdownlanguage"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="vi-vn active" src="images/icon/vi-VN.png" alt="">
+									<img class="en-us" src="images/icon/en-US.png" alt="">
+								</a>
+
+								<div class="dropdown-menu language-dropdown" aria-labelledby="dropdownlanguage">
+									<div class="form-check">
+										<input class="form-check-input input-vi" type="radio" name="language"
+											id="language1" value="option1" checked>
+										<label class="form-check-label" for="language1">
+											Vietnamese
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input input-en" type="radio" name="language"
+											id="language2" value="option2">
+										<label class="form-check-label" for="language2">
+											English
+										</label>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown dropdown-user">
+								<a class="dropdown-toggle" href="#" role="button" id="dropdownuser"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img class="d-none" src="images/icon/account_white.png" alt="">
+									<span class="">Nguyễn Hữu Thành Nam</span>
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="dropdownuser">
+									<a class="dropdown-item d-none" href="#">Đăng nhập</a>
+									<a class="dropdown-item d-none" href="#">Đăng ký</a>
+									<a class="dropdown-item" href="#">Đăng xuất</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- END nav -->
+
+
+	<div class="hero-wrap hero-content" style="background-image: url('images/order/banner-content.png');">
+
+
+	</div>
+	<div class="content-wrap content-order">
+		<div class="ftco-section ftco-step form-top">
+			<div class="container">
+				<div class="row no-gutters slider-text">
+					<div class="col-12 ftco-animate">
+						<div class="block-7 step-order">
+							<div class="step-content">
+								<ul class="slider-step">
+									<li class="active body-1">
+										<span>01</span>
+										<p>Chọn điểm di tích</p>
+									</li>
+									<li class="active body-1">
+										<span>02</span>
+										<p>Đặt vé</p>
+									</li>
+									<li class="active current body-1">
+										<span>03</span>
+										<p>Thanh toán</p>
+									</li>
+									<li class="body-1">
+										<span>04</span>
+										<p>Hoàn tất</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="ftco-section ftco-addcart">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-12 heading-section text-left mb-0 ftco-animate">
+						<h2 class="heading2">Xác nhận thông tin</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="addcart-infomation">
+							<dl class="row">
+								<dt class="col-sm-2">Họ tên:</dt>
+								<dd class="col-sm-10">Nguyễn Văn A</dd>
+								
+								<dt class="col-sm-2">Email:</dt>
+								<dd class="col-sm-10">
+									nva123@gmail.com
+								</dd>
+
+								<dt class="col-sm-2">Số điện thoại:</dt>
+								<dd class="col-sm-10">
+									0234001004
+								</dd>
+							</dl>
+						</div>
+						<div class="addcart-container">
+							
+							<div class="addcart-list">
+								<div class="addcart-list__item addcart-list__column">									
+									<div class="media">
+										<div class="bg_img"
+											style="background-image: url('images/destination/DaiNoi.jpg');"></div>
+										<div class="media-body">
+											<dl class="row">
+												<dt class="col-sm-2">Địa điểm 1:</dt>
+												<dd class="col-sm-10">Đại Nội Huế</dd>
+												
+												<dt class="col-sm-2">Số lượng:</dt>
+												<dd class="col-sm-10">
+													2 người lớn, 1 trẻ em, 1 đối tượng ưu tiên
+												</dd>
+				
+												<dt class="col-sm-2">Tổng cộng:</dt>
+												<dd class="col-sm-10 text-primary">
+													550.000 VNĐ
+												</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="media">
+										<div class="bg_img"
+											style="background-image: url('images/destination/MinhMang.jpg');"></div>
+										<div class="media-body">
+											<dl class="row">
+												<dt class="col-sm-2">Địa điểm 2:</dt>
+												<dd class="col-sm-10">Lăng Vua Minh Mạng</dd>
+												
+												<dt class="col-sm-2">Số lượng:</dt>
+												<dd class="col-sm-10">
+													2 người lớn, 1 trẻ em
+												</dd>
+				
+												<dt class="col-sm-2">Tổng cộng:</dt>
+												<dd class="col-sm-10 text-primary">
+													350.000 VNĐ
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+						<div class="addcart-option">
+							<div class="heading-section text-left mb-0 ftco-animate">
+								<h2 class="heading2">Chọn phương thức thanh toán</h2>
+							</div>
+							<div class="accordion" id="accordion_addOption">
+								<div class="card">
+								  <div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+									  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Thẻ ATM hoặc ibanking của các ngân hàng trong nước
+									  </button>
+									</h5>
+								  </div>
+							  
+								  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_addOption">
+									<div class="card-body">
+										<div class="option_banks">
+											<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											  <label class="btn btn-default active">
+												<input type="radio" name="options" id="option1" autocomplete="off"> <img class="img-fluid" src="images/brand/eximbank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option2" autocomplete="off"> <img class="img-fluid" src="images/brand/hdbank.png" alt="">
+											  </label>											  
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option4" autocomplete="off"> <img class="img-fluid" src="images/brand/vietcombank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option5" autocomplete="off"> <img class="img-fluid" src="images/brand/viettinbank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option6" autocomplete="off"> <img class="img-fluid" src="images/brand/vp-bank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option7" autocomplete="off"> <img class="img-fluid" src="images/brand/logo-seabank4.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option8" autocomplete="off"> <img class="img-fluid" src="images/brand/Logo-SHB-VN.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option9" autocomplete="off"> <img class="img-fluid" src="images/brand/Logo_TPBank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option10" autocomplete="off"> <img class="img-fluid" src="images/brand/mb-bank.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option11" autocomplete="off"> <img class="img-fluid" src="images/brand/LOGO-VIB-Blue.png" alt="">
+											  </label>
+											</div>
+										  </div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+									  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Ví điện tử
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_addOption">
+									<div class="card-body">
+										<div class="option_banks">
+											<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											  <label class="btn btn-default active">
+												<input type="radio" name="options" id="option12" autocomplete="off"> <img class="img-fluid" src="images/brand/momo.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option13" autocomplete="off"> <img class="img-fluid" src="images/brand/zalopay.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option14" autocomplete="off"> <img class="img-fluid" src="images/brand/vnpay.png" alt="">
+											  </label>
+											 
+											</div>
+										  </div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+									  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Thẻ thanh toán quốc tế
+									  </button>
+									</h5>
+								  </div>
+								  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_addOption">
+									<div class="card-body">
+										<div class="option_banks">
+											<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											  <label class="btn btn-default active">
+												<input type="radio" name="options" id="option15" autocomplete="off"> <img class="img-fluid" src="images/brand/JCB.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option16" autocomplete="off"> <img class="img-fluid" src="images/brand/Visa.png" alt="">
+											  </label>
+											  <label class="btn btn-default">
+												<input type="radio" name="options" id="option17" autocomplete="off"> <img class="img-fluid" src="images/brand/mastercard.png" alt="">
+											  </label>
+											 
+											</div>
+										  </div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingFour">
+									  <h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											Thanh toán khi đến tham quan
+										</button>
+									  </h5>
+									</div>
+									<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion_addOption">
+									  <div class="card-body">
+										Thanh toán tại quầy bán vé
+									  </div>
+									</div>
+								  </div>
+							  </div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="total-ticket">
+							<div class="price__item price__action">
+								<span>Tạm tính:</span>
+								<span class="price__nummber">950.000 VNĐ</span>								
+							</div>
+							<div class="price__item price__promotion">
+								<span>Khuyến mãi:</span>
+								<span class="price__nummber">-200.000 VNĐ</span>								
+							</div>
+							<div class="price__item price__total">
+								<span>Tổng cộng:</span>
+								<span class="price__nummber">750.000 VNĐ</span>								
+							</div>
+							
+						</div>
+						<a href="#" class="btn btn-primary w-100">Mua vé</a>
+						<div class="alert alert-warning" role="alert">
+							<img src="images/icon/alert.png" alt="">
+							<span>Khi bạn nhấn nút <b>Thanh toán</b> là đồng ý Các điều khoản sử dụng của chúng tôi.</span>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+	</div>
+
+
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<a href="index.html" class="ftco-heading-2"><img src="images/logofooter.png" alt=""></a>
+							<h6>Liên kết với chúng tôi</h6>
+							<ul class="ftco-footer-social list-unstyled">
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/fb.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/twitter.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/instagram.png"
+											alt=""></a></li>
+								<li class="ftco-animate"><a href="#"><img width="20" src="images/icon/youtube.png"
+											alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Liên kết</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Khám phá Huế</a></li>
+								<li><a href="#" class="d-block">Visit Huế</a></li>
+								<li><a href="#" class="d-block">Cổng TTBTDT Cố đô Huế</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Điều khoản sử dụng</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Điều khoản chung</a></li>
+								<li><a href="#" class="d-block">Điều khoản giao dịch</a></li>
+								<li><a href="#" class="d-block">Chính sách bảo mật</a></li>
+								<li><a href="#" class="d-block">How it works</a></li>
+								<li><a href="#" class="d-block">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Thông tin</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" class="d-block">Chương trình khuyến mãi</a></li>
+								<li><a href="#" class="d-block">Bản đồ các điểm đến</a></li>
+								<li><a href="#" class="d-block">Giá vé tham quan</a></li>
+								<li><a href="#" class="d-block">Thời gian/Nội quy tham quan</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="row">
+					<div class="col-md-9">
+						<p>
+							Bản quyền Website thuộc về Trung tâm Bảo tồn Di tích Cố đô Huế<br />
+							Địa chỉ: Tam Toà, 23 Tống Duy Tân - thành phố Huế, Việt Nam<br />
+							Email: huedisan@gmail.com
+						</p>
+					</div>
+					<div class="col-md-3 text-right">
+						<img src="images/logobct.png" alt="" class="img-active">
+						<div class="copyright-pane">
+							<div class="tooltip_constrast">
+								<img alt="" style="width: 30px; height: 30px;" src="images/icon/hotrokhuyettat.svg">
+								<input class="tooltiptext" id="myRange" min="0" max="200" onchange="showVal(this.value)"
+									type="range">
+							</div>
+							<div class="copyright">
+								Thiết kế và xây dựng: <a target="_blank" href="www.huecit.vn">HueCIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$('.quantity-button').off('click').on('click', function () {
+
+			if ($(this).hasClass('quantity-add')) {
+				var addValue = parseInt($(this).parent().find('input').val()) + 1;
+				$(this).parent().find('input').val(addValue).trigger('change');
+			}
+
+			if ($(this).hasClass('quantity-remove')) {
+				var removeValue = parseInt($(this).parent().find('input').val()) - 1;
+				if (removeValue <= 0) {
+					removeValue = 0;
+				}
+				$(this).parent().find('input').val(removeValue).trigger('change');
+			}
+
+		});
+
+
+		$('.quantity input').off('change').on('change', function () {
+			console.log($(this).val());
+		});
+		function showdiemthamquan() {
+			var selectthamquan = formorder.diemthamquan;
+			var valuediemthamquan = document.getElementById('diemthamquan');
+			valuediemthamquan.innerHTML = (selectthamquan[selectthamquan.selectedIndex].value);
+		}
+
+	</script>
+	<script type="text/javascript">
+		function showVal(newVal) {
+			document.getElementsByTagName("body")[0].setAttribute('style', 'color:blue;filter: brightness(' + newVal + '%);');
+		}
+
+	</script>
+</body>
+
+</html>
