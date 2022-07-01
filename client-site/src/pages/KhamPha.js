@@ -8,7 +8,11 @@ import BannerSlider from '../components/common/BannerSlider'
 import MainHeader from '../components/MainHeader'
 import MainFooter from '../components/common/MainFooter'
 
+
 import { Navigate, useLocation } from 'react-router-dom'
+import DestinationIntroItem from 'components/khampha/DestinationIntroItem'
+
+
 
 const BASE_URL = process.env.REACT_APP_URL
 
@@ -51,7 +55,7 @@ const KhamPha = (props) => {
     }, [isAuthen])
 
     if (!isAuthen) {
-        return (
+        return (// tạo đường dẫn
             <Navigate
                 to={{
                     pathname: '/home-page',
@@ -63,14 +67,17 @@ const KhamPha = (props) => {
     return (
         <Fragment>
             {/* <HomeSlider /> */}
-            {/* <TestSlider /> */}
+            {/* <TestSlider />
+             <MainFooter />
+            */}
             <MainHeader />
             <div>
-                <BannerSlider />
-                <DestinationIntro />
-                <EventIntro />
-                <ServicesIntro />
+           
+            
+            <DestinationIntroItem></DestinationIntroItem>
                 <MainFooter />
+
+               
             </div>
         </Fragment>
     )

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, Route } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { authenActions } from '../store/authen-slice'
 import MenuDropdown from './trangchu/MenuDropdown'
 import MenuUserDropdown from './trangchu/MenuUserDropdown'
+import HomeSlider from './khampha/HomeSlider'
 
 const dropdownDatve = [
     {
@@ -61,7 +62,7 @@ const MainHeader = (props) => {
             className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
             id="ftco-navbar"
         >
-            <div className="container">
+            <div className="container" id="container_ex1" style={{backgroundImage:'url(images/brand/banner-content-1.png)'}}>
                 <Link className="navbar-brand" to={'/home-page'}>
                     <img src="images/logo.svg" alt="img-fluid" />
                 </Link>
@@ -109,11 +110,17 @@ const MainHeader = (props) => {
                                 <span>Dịch vụ</span>
                             </a>
                         </li>
-                        <li className="nav-item">
-                            <a href="khampha.html" className="nav-link">
-                                Khám phá
+                     
+                     
+                       
+                          <li className="nav-item">
+                            <a href="kham-pha" className="nav-link">
+                                kham phá
                             </a>
                         </li>
+                       
+                   
+                     
                         <li className="nav-item">
                             <a href="thong-ke" className="nav-link">
                                 Thống kê
