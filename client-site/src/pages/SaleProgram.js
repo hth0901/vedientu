@@ -106,7 +106,7 @@ console.log(list)
                                 <div className="col-md-9">
                                     <div className="box-container">
                                         <div className="heading-section heading-content ">
-                                            <h2 className="heading2" >Chương Trính Khuyến Mãi</h2>
+                                            <h2 className="heading2" >Chương Trình Khuyến Mãi</h2>
 
                                         </div>
                                         <div className="content-container">
@@ -129,14 +129,14 @@ console.log(list)
                                         <div className="list-blog__item col-lg-4 col-md-6" key={item.id}>
                                        
                                         
-                                          
-										<Link to={`/chuong-trinh-khuyen-mai/${item.id}`} className="bg-img" >
+                                   
+									
+                                        <div className="blog-img">                                       
+                                        <Link to={`/chuong-trinh-khuyen-mai/${item.id}`} className="bg-img" >
                                         <img src={listimg[idx]}  style={{width:"300px",height:"250px",objectFit:"cover"}} 
                                                        alt=""/>
 
                                         </Link>
-                                        <div className="blog-img">                                       
-                                             
                                                 </div>
 										<div className="content-blog" >{console.log(item.imgNews.url)}
 											<h6 className="title-blog"><Link to={`/chuong-trinh-khuyen-mai/${item.id}`}>{item.category.title}</Link></h6>
@@ -179,6 +179,9 @@ console.log(list)
                                         </div>
                                     </div>
                                 </div>
+                       
+
+                                     
 
                                 <DestinationIntro></DestinationIntro>
 
