@@ -188,7 +188,7 @@ const DestinationIntroItem = () => {
 												
 												<a href="#" className="bg-img" style={{backgroundImage:"url("+item.imageUrl + ")"}}>
 													<p className="content-overlay"></p>
-													<p class="content-info">
+													<p className="content-info">
 														<span className="title-destination">{item.title}</span>
 													</p>
 												</a>

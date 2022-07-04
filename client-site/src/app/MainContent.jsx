@@ -63,7 +63,9 @@ import RegisterPanel from 'components/common/RegisterPanel'
 import PendingPage from 'pages/PendingPage'
 import TicketScanTest from 'pages/TicketScanTest'
 import TestPage from 'pages/TestPage'
-
+import SaleProgramDetailPage from 'pages/SaleProgramDetailPage'
+import SalePrograms from 'pages/SaleProgram'
+import SaleProgram from 'pages/SaleProgram'
 const MainContent = (props) => {
     const isLoading = useSelector((state) => state.ui.showLoading)
     const { showLoginPanel, showRegisterPanel } = useSelector(
@@ -85,11 +87,17 @@ const MainContent = (props) => {
                 <Routes>
                     <Route
                         path="/"
-                        element={<Navigate replace to={'/home-page'} />}
+                        
+                        element={<Navigate replace to={'/home-page'} /> }/*history trong react-router*/ 
                     />
                     {/* <Route path="/home-page" element={<HomePage />} /> */}
 
                     <Route path="/home-page" element={<HomePage />} />
+                    <Route path="/chuong-trinh-khuyen-mai" element={<SaleProgram/>} />
+                    <Route
+                        path="/chuong-trinh-khuyen-mai/:id"
+                        element={<SaleProgramDetailPage />}
+                    />
 
                     <Route path="/kham-pha" element={<KhamPha />} />
                     <Route path="/diem-den/*" element={<DestinationPage />} />

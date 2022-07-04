@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { diadiemActions } from '../../store/diadiem-slice'
 
 import { truyVanDanhSachDiaDiem } from '../../store/diadiem-actions'
-
+import { Link } from 'react-router-dom';
 import { Fragment } from "react";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -103,6 +103,7 @@ const DestinationIntro = () => {
                                                           <li className='active'><a href="#">Khám phá di sản Huế</a></li>
                                                           <li><a href="#">Chương trình sự kiện nổi bật</a></li>
                                                           <li><a href="#">Có thể bạn quan tâm</a></li>
+                                                          <li><Link to="/chuong-trinh-khuyen-mai">Chương Trình Khuyến Mãi</Link></li>
                                                       </ul>
                                                   </div>
                                                   
