@@ -37,6 +37,8 @@ import TicketManagement from 'pages/TicketManagement'
 import TicketScanPage from 'pages/TicketScanPage'
 import TicketSearchPage from 'pages/TicketSearchPage'
 import TrangThongTinVe from 'pages/TrangThongTinVe'
+import TourMoiPage from 'pages/TourMoiPage'
+import TourMoiDetailPage from 'pages/TourMoiDetailPage'
 import React, { Suspense, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, Route, Routes } from 'react-router'
@@ -110,6 +112,11 @@ const MainContent = (props) => {
                         path="/su-kien/:eventId"
                         element={<EventDetailPage />}
                     />
+                    <Route path="/tour-moi" element={<TourMoiPage />}/>
+                    <Route 
+                        path="/tour-moi/:tourId"
+                        element={<TourMoiDetailPage />}
+                    />
                     <Route path="/dich-vu" element={<ServicesPage />} />
                     <Route
                         path="/dich-vu/:id"
@@ -166,7 +173,7 @@ const MainContent = (props) => {
                     {/* <Route path="/dieu-khoan/*" element={<DieuKhoanPage />} /> */}
                     <Route
                         path="/dieu-khoan/*"
-                        element={<DieuKhoanPageNew />}
+                        element={<DieuKhoanPage />}
                     />
                     <Route path="/lien-he" element={<LienHePage />} />
                     <Route path="/test-page" element={<TestPage />} />

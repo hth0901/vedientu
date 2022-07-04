@@ -6,16 +6,16 @@ import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import EventDetail from 'components/sukien/EventDetail'
+import TourDetail from 'components/tour/TourDetail'
 
 import { Navigate, useLocation } from 'react-router-dom'
 import { el } from 'date-fns/locale'
 
 const BASE_URL = process.env.REACT_APP_URL
 
-const EventDetailPage = (props) => {
+const TourMoiDetailPage = (props) => {
     const params = useParams()
-    const { eventId } = params
+    const { tourId } = params
 
     const [detailData, setDetailData] = useState(null)
     const [dataFull, setDataFull] = useState(null)
@@ -51,8 +51,8 @@ const EventDetailPage = (props) => {
     }, [isAuthen])
 
     useEffect(() => {
-        if (eventId) {
-            fetch(`https://www.hueworldheritage.org.vn//desktopModules/APITinBai/API/v1/Events/getEventsByCategory?theloai=d7167cf0-03a5-ec11-bd7f-fdff21248bcb`)
+        if (tourId) {
+            fetch(`https://www.hueworldheritage.org.vn/desktopModules/APITinBai/API/v1/News/getListNewsbyCateID?categoryId=F19D0328-979A-46FB-B080-AE6800B5B500`)
                 .then((res) => {
                     if (!res.ok) {
                         throw new Error('Không tìm thấy dữ liệu của sự kiện')
@@ -61,10 +61,10 @@ const EventDetailPage = (props) => {
                 })
                 .then((data) => {
                     // console.log(data)
-                    const data1 = data['events']
+                    const data1 = data['newsList']
                     setDataFull(data1)
                     data1.map((el, idx) => {
-                        if(el.id==eventId){
+                        if(el.id==tourId){
                             const data2 = data1[idx]
                             setDetailData(data2)
                         }
@@ -76,7 +76,7 @@ const EventDetailPage = (props) => {
                     setErrMessage(err.message)
                 })
         }
-    }, [eventId])
+    }, [tourId])
 
     // if (!isAuthen) {
     //     return (
@@ -91,10 +91,10 @@ const EventDetailPage = (props) => {
     return (
         <Fragment>
             <MainHeader />
-            {detailData && <EventDetail detailData={detailData} datafull={dataFull} />}
+            {detailData && <TourDetail detailData={detailData} datafull={dataFull} />}
             <MainFooter />
         </Fragment>
     )
 }
 
-export default EventDetailPage
+export default TourMoiDetailPage

@@ -54,15 +54,15 @@ const EventPage = (props) => {
             })
     }, [isAuthen])
 
-    if (!isAuthen) {
-        return (
-            <Navigate
-                to={{
-                    pathname: '/home-page',
-                }}
-            />
-        )
-    }
+    // if (!isAuthen) {
+    //     return (
+    //         <Navigate
+    //             to={{
+    //                 pathname: '/home-page',
+    //             }}
+    //         />
+    //     )
+    // }
 
     return (
         <Fragment>
