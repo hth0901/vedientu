@@ -53,16 +53,16 @@ const SaleProgramDetailPage = (props) => {
     useEffect(() => {
       let mounted = true;
      getList1().then(items=>{
-        var tam=[...items['newsList']]
-            console.log(tam);
+        var tam=[...items.newsList]
+       
         for(var i in tam){
-            console.log(tam[i].id)
+           
 
             
             if(tam[i].id===params.id)
-            {   setimgus(tam[i].imgNews.url)
+            {   setimgus(tam[i].imgNews.url)   
                 setList({...tam[i]})
-                console.log(list)
+              
                 break
 
                 
@@ -86,8 +86,8 @@ const SaleProgramDetailPage = (props) => {
             {/* <HomeSlider /> 
             <div className="order-item col-md-4 col-sm-6" >
                                           <div className="order-container">									
-                                              
-                                              <a href="#" className="bg-img" style={{backgroundImage:"url("+item.imgNews.url + ")"}}>
+ 0p;u                                             
+    =-/                                           <a href="#" className="bg-img" style={{backgroundImage:"url("+item.imgNews.url + ")"}}>
                                                   <p className="content-overlay"></p>
                                                   <p class="content-info">
                                                       <span className="title-destination">{item.title}</span>
@@ -125,18 +125,11 @@ const SaleProgramDetailPage = (props) => {
                                             <div className="row">
                                                 <div className="col-md-12">
                                                     <div className="destination-order row">
-                                          
-                                                    <div class="blog-img">
-                                         
-                                         <img src={imgus}
-                                         
-                                         
-                                         alt=""/>
+                                                <div className="blog-img">                                       
+                                                <img src={imgus}
+                                                       alt=""/>
                                                 </div>
-
                                           {ReactHtmlParser(list.content)}
-                                     	
-                                      
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,4 +181,4 @@ const SaleProgramDetailPage = (props) => {
 
 
 }
-export default SaleProgramDetailPage
+export default SaleProgramDetailPage 

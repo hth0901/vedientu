@@ -45,7 +45,7 @@ const SaleProgram = (props) => {
     //         })
     // }, [isAuthen])
 
-
+    const [listimg,setlistimg]=useState([])
     const [list, setList] = useState([]);
     const [filteredResults, setFilteredResults] = useState([]);
     const [searchInput, setSearchInput] = useState('');
@@ -53,9 +53,14 @@ const SaleProgram = (props) => {
       let mounted = true;
       getList1()
         .then(items => {
-            var tam=[...items['newsList']]
-            console.log(tam)
+            var tam=[...items.newsList]
             setList(tam)
+            var arr=[]
+            for(var i in tam)
+            {
+                arr.push(tam[i].imgNews.url)
+            }
+            setlistimg(arr)
           
     })
     
@@ -123,10 +128,17 @@ console.log(list)
                                       return (
                                         <div className="list-blog__item col-lg-4 col-md-6" key={item.id}>
                                        
-                                            
+                                        
                                           
-										<Link to={`/chuong-trinh-khuyen-mai/${item.id}`} className="bg-img" style={{backgroundImage:"url("+item.imgNews.url + ")"}} ></Link>
-										<div className="content-blog" >
+										<Link to={`/chuong-trinh-khuyen-mai/${item.id}`} className="bg-img" >
+                                        <img src={listimg[idx]}  style={{width:"300px",height:"250px",objectFit:"cover"}} 
+                                                       alt=""/>
+
+                                        </Link>
+                                        <div className="blog-img">                                       
+                                             
+                                                </div>
+										<div className="content-blog" >{console.log(item.imgNews.url)}
 											<h6 className="title-blog"><Link to={`/chuong-trinh-khuyen-mai/${item.id}`}>{item.category.title}</Link></h6>
 											
 											<p className="description-blog">
