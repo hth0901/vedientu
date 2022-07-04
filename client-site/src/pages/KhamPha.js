@@ -54,7 +54,7 @@ const KhamPha = (props) => {
             })
     }, [isAuthen])
 
-    if (!isAuthen) {
+ /*   if (!isAuthen) {
         return (// tạo đường dẫn
             <Navigate
                 to={{
@@ -62,7 +62,7 @@ const KhamPha = (props) => {
                 }}
             />
         )
-    }
+    }*/
 
     return (
         <Fragment>
