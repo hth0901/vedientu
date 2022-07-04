@@ -165,7 +165,7 @@ const MainContent = (props) => {
                     {/* <Route path="/dieu-khoan/*" element={<DieuKhoanPage />} /> */}
                     <Route
                         path="/dieu-khoan/*"
-                        element={<DieuKhoanPageNew />}
+                        element={<DieuKhoanPage />}
                     />
                     <Route path="/lien-he" element={<LienHePage />} />
                     <Route path="/test-page" element={<TestPage />} />
