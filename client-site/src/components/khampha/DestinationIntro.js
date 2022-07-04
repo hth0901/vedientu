@@ -8,13 +8,15 @@ import { diadiemActions } from '../../store/diadiem-slice'
 
 import { truyVanDanhSachDiaDiem } from '../../store/diadiem-actions'
 
+import { Fragment } from "react";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const BASE_URL = process.env.REACT_APP_URL
 
-const DestinationIntro = (props) => {
-    const dispatch = useDispatch()
+const DestinationIntro = () => {
+    /*const dispatch = useDispatch()
+
 
     const dsDiaDiem = useSelector((state) => {
         return state.diadiem.danhsach
@@ -61,7 +63,7 @@ const DestinationIntro = (props) => {
             <div className="container">
                 <div className="row justify-content-start">
                     <div className="col-md-7 heading-section">
-                        <h5 className="mb-60">Khám phá di sản Huế</h5>
+                        <h5 className="mb-60">Khám phá di sản Huế </h5>
                     </div>
                 </div>
                 <div className="row">
@@ -88,7 +90,38 @@ const DestinationIntro = (props) => {
                 </div>
             </div>
         </section>
-    )
-}
+                                )*/
+                
+                return(                <Fragment>
+                                <div className='col-md-3'>
+                                              <div className='sidebarleft'>
+                                                  <div className='menu-m1'>
+                                                      <h4 className='title-menu'>
+                                                          <a href="#">Khám phá</a>
+                                                      </h4>
+                                                      <ul className='list-unstyled'>
+                                                          <li className='active'><a href="#">Khám phá di sản Huế</a></li>
+                                                          <li><a href="#">Chương trình sự kiện nổi bật</a></li>
+                                                          <li><a href="#">Có thể bạn quan tâm</a></li>
+                                                      </ul>
+                                                  </div>
+                                                  
+                                                  <div className='adv-container'>
+                                                      <a className='adv-item'>
+                                                          <img src="images/adv/adv1.png" alt=""/>
+                                                      </a>
+                                                      <a className='adv-item'>
+                                                          <img src="images/adv/adv2.png" alt=""/>
+                                                      </a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                              
+                              </Fragment>
+                )
+                              
+                              };
+
+                            
 
 export default DestinationIntro

@@ -1,158 +1,111 @@
+
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
+
 const MainFooter = (props) => {
   return (
-    <Fragment>
-      <footer className="ftco-footer ftco-bg-dark ftco-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md">
-              <div className="ftco-footer-widget mb-4 mb-md-0">
-                <h2 className="ftco-heading-2">
-                  <img src="images/logo.svg" alt="" />
-                </h2>
-                {/* <ul className="ftco-footer-social list-unstyled text-center">
-                  <li className="ftco-animate">
-                    <a href="javascript:void(0)">
-                      <span className="icon-facebook"></span>
-                    </a>
-                  </li>
-                  <li className="ftco-animate">
-                    <a href="javascript:void(0)">
-                      <span className="icon-twitter"></span>
-                    </a>
-                  </li>
-                  <li className="ftco-animate">
-                    <a href="javascript:void(0)">
-                      <span className="icon-instagram"></span>
-                    </a>
-                  </li>
-                  <li className="ftco-animate">
-                    <a href="javascript:void(0)">
-                      <span className="icon-youtube"></span>
-                    </a>
-                  </li>
-                </ul> */}
-              </div>
-            </div>
-            <div className="col-md">
-              <div className="ftco-footer-widget mb-4 mb-md-0 ml-md-5">
-                <h2 className="ftco-heading-2">Liên kết</h2>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="http://khamphahue.com.vn/" target='_blank' className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Khám phá Huế
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://visithue.vn/" target='_blank' className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Visit Huế
-                    </a>
-                  </li>
-                  {/* <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Dịch vụ
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Mua vé
-                    </a>
-                  </li> */}
-                </ul>
-              </div>
-            </div>
-            <div className="col-md">
-              <div className="ftco-footer-widget mb-4 mb-md-0">
-                <h2 className="ftco-heading-2">Về chúng tôi</h2>
-                <ul className="list-unstyled">
-                  <li>
-                    <Link to={{pathname: 'http://hueworldheritage.org.vn/TTBTDTCDH.aspx?l=vn&TieuDeID=55&KenhID=107'}} target={'_blank'} className="body-1 d-flex"><i className="material-icons-outlined">chevron_right</i>{" "}Về chúng tôi</Link>
-                  </li>
-                  <li>
-                    <Link to={{pathname: 'http://hueworldheritage.org.vn/TTBTDTCDH.aspx?TieuDeID=52&l=vn'}} target={'_blank'} className="body-1 d-flex"><i className="material-icons-outlined">chevron_right</i>{" "}Thông tin tham quan</Link>
-                  </li>
-                  <li>
-                    <Link to={{pathname: 'http://hueworldheritage.org.vn/TTBTDTCDH.aspx?KenhID=92&TieuDeID=52&LoaiTieuDe=1&LoaiKenh=1&l=vn'}} target={'_blank'} className="body-1 d-flex"><i className="material-icons-outlined">chevron_right</i>{" "}Chương trình khuyến mãi</Link>
-                  </li>
-                  <li>
-                    <Link to={{pathname: 'http://hueworldheritage.org.vn/TTBTDTCDH.aspx?TieuDeID=52&KenhID=119&ChuDeID=0&TinTucID=368&l=vn'}} target='_blank' className="body-1 d-flex"><i className="material-icons-outlined">chevron_right</i>{" "}Nội quy tham quan</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md">
-              <div className="ftco-footer-widget mb-4 mb-md-0">
-                <h2 className="ftco-heading-2">Điều khoản sử dụng</h2>
-                <ul className="list-unstyled">
-                  <li>
-                    {/* <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Điều khoản sử dụng
-                    </a> */}
-                    <Link to={'/dieu-khoan'} className="body-1 d-flex"><i className="material-icons-outlined">chevron_right</i>{" "}Điều khoản sử dụng</Link>
-                  </li>
-                  {/* <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Chính sách bảo mật
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Chính sách hoàn vé
-                    </a>
-                  </li> */}
-                </ul>
-              </div>
-            </div>
-            {/* <div className="col-md">
-              <div className="ftco-footer-widget mb-4 mb-md-0">
-                <h2 className="ftco-heading-2">Bạn cần biết</h2>
-                <ul className="list-unstyled">
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Mua đặc sản Huế
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Phương tiện đi lại
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Bản đồ các điểm đến
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Giao thông ở Huế
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" className="body-1 d-flex">
-                      <i className="material-icons-outlined">chevron_right</i>{" "}
-                      Số điện thoại cần biết
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </footer>
-    </Fragment>
+
+  	<footer className='ftco-footer ftco-bg-dark ftco-section'>
+		<div className='container'>
+			<div className='footer-top'>
+				<div className='row'>
+					<div className='col-md'>
+						<div className='ftco-footer-widget mb-4'>
+							<a href="index.html" className='ftco-heading-2'><img src="images/logofooter.png" alt=""/></a>
+							<h6>Liên kết với chúng tôi</h6>
+							<ul className='ftco-footer-social list-unstyled'>
+								<li className='ftco-animate fadeInUp ftco-animated' ><a href="#"><img width="20" src="images/icon/fb.png"
+											alt=""/></a></li>
+										
+								<li className=" fadeInUp ftco-animated"><a href="#"><img width="20" src="images/icon/twitter.png"
+											alt=""/></a></li>
+								<li className=" fadeInUp ftco-animated"><a href="#"><img width="20" src="images/icon/instagram.png"
+											alt=""/></a></li>
+								<li className=" fadeInUp ftco-animated"><a href="#"><img width="20" src="images/icon/youtube.png"
+											alt=""/></a></li>
+							</ul>
+						
+						</div>
+					</div>
+					<div className='col-md'>
+						<div className='ftco-footer-widget mb-4'>
+							<h2 className='ftco-heading-2'>Liên kết</h2>
+							<ul className='list-unstyled'>
+								<li><a href="#" className='d-block'>Khám phá Huế</a></li>
+								<li><a href="#" className='d-block'>Visit Huế</a></li>
+								<li><a href="#" className='d-block'>Cổng TTBTDT Cố đô Huế</a></li>
+							</ul>
+						</div>
+					</div>
+					<div className='col-md'>
+						<div className='ftco-footer-widget mb-4'>
+							<h2 className='ftco-heading-2'>Điều khoản sử dụng</h2>
+							<ul className='list-unstyled'>
+								<li><a href="#" className='d-block'>Điều khoản chung</a></li>
+								<li><a href="#" className='d-block'>Điều khoản giao dịch</a></li>
+								<li><a href="#" className='d-block'>Chính sách bảo mật</a></li>
+								<li><a href="#" className='d-block'>How it works</a></li>
+								<li><a href="#" className='d-block'>Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Thông tin</h2>
+							<ul class="list-unstyled">
+								<li><a href="#" className='d-block'>Chương trình khuyến mãi</a></li>
+								<li><a href="#" className='d-block'>Bản đồ các điểm đến</a></li>
+								<li><a href="#" className='d-block'>Giá vé tham quan</a></li>
+								<li><a href="#" className='d-block'>Thời gian/Nội quy tham quan</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className='footer-bottom'>
+				<div className='row'>
+					<div className='col-md-9'>
+						<p>
+							Bản quyền Website thuộc về Trung tâm Bảo tồn Di tích Cố đô Huế<br />
+							Địa chỉ: Tam Toà, 23 Tống Duy Tân - thành phố Huế, Việt Nam<br />
+							Email: huedisan@gmail.com
+						</p>
+					</div>
+					<div className='col-md-3 text-right'>
+						<img src="images/logobct.png" alt="" className='img-active'/>
+						<div className='copyright-pane'>
+						<div className='tooltip_constrast'>
+					    <img
+                                        alt=""
+                                        src="images/icon/hotrokhuyettat.svg"
+                                        style={{
+                                            width: '30px',
+                                            height: '30px',
+                                        }}
+									
+                                    />
+                                    <input
+                                        className='tooltiptext'
+                                        id="myRange"
+                                        min="0"
+                                        max="200"
+                                        // onchange="showVal(this.value)"
+                                        type="range"
+                                    />
+							</div>
+						</div>
+							<div className='copyright'>
+								Thiết kế và xây dựng: <a target="_blank" href="www.huecit.vn">HueCIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+ 
+	</footer>
+
   );
 };
 
