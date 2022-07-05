@@ -57,9 +57,10 @@ const TourDetail = (props) => {
                                                 <div className="blog-content">
                                                     <p>Đến với chương trình {detailData.title} du khách có nhiều cơ hội trải nghiệm thú vị cùng Di sản Huế:</p>
                                                     <ul>
-                                                        <li>
-                                                            {detailData.content}
-                                                        </li>
+                                                        
+                                                        <div dangerouslySetInnerHTML={{__html: `${detailData.content}`}} />
+                                                            
+                                                        
                                                         
                                                     </ul>
                                                     <h6><strong>{detailData.title} hân hạnh đón chào Du khách!</strong></h6>
