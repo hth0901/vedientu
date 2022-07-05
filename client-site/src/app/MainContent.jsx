@@ -39,6 +39,7 @@ import TicketSearchPage from 'pages/TicketSearchPage'
 import TrangThongTinVe from 'pages/TrangThongTinVe'
 import TourMoiPage from 'pages/TourMoiPage'
 import TourMoiDetailPage from 'pages/TourMoiDetailPage'
+import ThoiGianThamQuan from 'pages/ThoiGianThamQuan'
 import React, { Suspense, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Navigate, Route, Routes } from 'react-router'
@@ -120,6 +121,7 @@ const MainContent = (props) => {
                         path="/tour-moi/:tourId"
                         element={<TourMoiDetailPage />}
                     />
+                    <Route path="/thoi-gian-tham-quan" element={<ThoiGianThamQuan />}></Route>
                     <Route path="/dich-vu" element={<ServicesPage />} />
                     <Route
                         path="/dich-vu/:id"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import classes from './KdcTestPage.module.css'
@@ -7,11 +7,13 @@ const DieuKhoanGiaoDich = (props) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`${classes['col-9']} ${classes['col-s-9']}`}>
-            <h4 className={classes['main-title']}>ĐIỀU KHOẢN GIAO DỊCH</h4>
-            <h5 className={classes['sub-title']}>1. Phạm vi áp dụng</h5>
-            <p className={classes['p-content']}>
-                Điều kiện dưới đây áp dụng riêng cho chức năng mua vé trực tuyến
+        <Fragment>
+            <div className="heading-section heading-content">
+                <h2 className="heading2">Điều khoản chung</h2>
+            </div>
+            <div className="content-container">
+                <h5 className="addcart-header ticket-header">1. Phạm vi áp dụng</h5>
+                <p>Điều kiện dưới đây áp dụng riêng cho chức năng mua vé trực tuyến
                 tại Website để tham quan các điểm di tích Huế do Trung tâm
                 BTDTCĐ quản lý. Khi sử dụng chức năng để mua vé, Quý khách mặc
                 nhiên đã chấp thuận và tuân thủ tất cả các chỉ dẫn, điều khoản,
@@ -19,32 +21,21 @@ const DieuKhoanGiaoDich = (props) => {
                 giới hạn bởi Điều kiện sử dụng nêu ở đây. Nếu Quý khách không có
                 ý định mua vé trực tuyến hay không đồng ý với bất kỳ điều khoản
                 hay điều kiện nào nêu trong Điều kiện sử dụng, xin hãy dừng sử
-                dụng chức năng này.
-            </p>
-
-            <h5 className={classes['sub-title']}>
-                2. Điều kiện sử dụng tính năng mua vé trực Tuyến
-            </h5>
-            <p className={classes['p-content']}>
-                Quý khách phải nhập đầy đủ và đúng các thông tin chúng tôi yêu
+                dụng chức năng này.</p>
+                <h5 className="addcart-header ticket-header">2. Điều kiện sử dụng tính năng mua vé trực Tuyến</h5>
+                <p>Quý khách phải nhập đầy đủ và đúng các thông tin chúng tôi yêu
                 cầu trong quá trình đặt mua vé. Chúng tôi không chịu bất kỳ
                 trách nhiệm nào, dù trực tiếp hay gián tiếp, đối với những thiệt
-                hại hoặc mất mát gây ra do quý khách không tuân thủ quy định.
-            </p>
-
-            <h5 className={classes['sub-title']}>
-                3. Quy định về đặt vé trực tuyến
-            </h5>
-            <p className={classes['p-content']}>
-                Tính năng đặt vé trực tuyến hiện áp dụng cho tất cả các khách
-                tham quan của Trung tâm BTDTCĐ
-            </p>
-            <p className={classes['p-content']}>
+                hại hoặc mất mát gây ra do quý khách không tuân thủ quy định.</p>
+                <h5 className="addcart-header ticket-header">3. Quy định về đặt vé trực tuyến</h5>
+                <p>Tính năng đặt vé trực tuyến hiện áp dụng cho tất cả các khách
+                tham quan của Trung tâm BTDTCĐ</p>
+                <p >
                 Khi tiến hành các bước thanh toán, cần đọc kĩ các thông tin trên
                 địa điểm tham quan, số lượng người và đối tượng tham quan trước
                 khi hoàn tất việc xác nhận tất cả các thông tin về vé.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Quý khách thanh toán giao dịch đặt vé theo quy định tại Chính
                 Sách Thanh Toán đăng tải trên Trung tâm BTDTCĐ trước khi nhận mã
                 đặt vé của giao dịch đó. Khi quý khách nhấn (click) vào ô “Thanh
@@ -52,7 +43,7 @@ const DieuKhoanGiaoDich = (props) => {
                 soát thông tin Đặt chỗ; và đồng ý là Điều Khoản Và Điều Kiện sẽ
                 được áp dụng cho giao dịch mua vé trong giao dịch đó
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Email xác nhận đặt vé sau khi hoàn thành việc thanh toán vé trực
                 tuyến, quý khách sẽ nhận được thư xác nhận thông tin chi tiết vé
                 đã thanh toán thông qua địa chỉ thư điện tử (email) mà quý khách
@@ -60,44 +51,44 @@ const DieuKhoanGiaoDich = (props) => {
                 thư rác (spam mail) của bạn, vì vậy hãy kiểm tra chúng trước khi
                 liên lạc với Trung tâm BTDTCĐ
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Trong suốt quá trình đăng ký, quý khách đồng ý nhận email quảng
                 cáo từ website. Sau đó, nếu không muốn tiếp tục nhận mail, quý
                 khách có thể từ chối bằng cách nhấp vào đường link ở dưới cùng
                 trong mọi email quảng cáo
             </p>
 
-            <h5 className={classes['sub-title']}>4. Giá vé</h5>
-            <p className={classes['p-content']}>
+            <h5 className="addcart-header ticket-header">4. Giá vé</h5>
+            <p >
                 Giá vé được niêm yết tại website là giá bán cuối cùng đã bao gồm
                 thuế Giá trị gia tăng (VAT). Giá vé có thể thay đổi tùy thời
                 điểm và chương trình khuyến mãi kèm theo và sẽ được hiển thị rõ
                 tại trang Đặt vé khi quý khách tiến hành đặt hàng.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Giá vé khi đặt vé trực tuyến trên website Trung tâm BTDTCĐ là
                 giá vé người lớn và trẻ em. Các loại vé cho các đối tượng khác
                 vui lòng mua trực tiếp tại quầy vé tại các điểm tham quan.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Khán giả khi đến tham quan vui lòng mang theo giấy tờ tùy thân
                 hoặc hình ảnh của giấy tờ tùy thân có ảnh nhận diện và ngày
                 tháng năm sinh để đảm bảo việc tuân thủ theo quy định.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 5. Giá trị giao dịch và hình thức thanh toán
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Trung tâm BTDTCĐ cung cấp các hình thức thanh toán: thẻ Thanh
                 toán Nội địa, một số loại ví điện tử hoặc thanh toán tại quầy vé
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Trừ một số trường hợp có ghi chú riêng, thông thường quý khách
                 có thể lựa chọn một trong các hình thức thanh toán trên khi tiến
                 hành đặt vé.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Để đảm bảo an toàn thanh toán, Khách hàng lưu ý
             </p>
             <p className={classes['p-subcontent']}>
@@ -121,10 +112,10 @@ const DieuKhoanGiaoDich = (props) => {
                 soát.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 6. Giao kết giao dịch tại Trung tâm Bảo tồn di tích Cố đô Huế
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Khách hàng khi mua vé trực tuyến tại website Trung tâm BTDTCĐ
                 phải thực hiện các thao tác theo trình tự sau:
             </p>
@@ -150,15 +141,15 @@ const DieuKhoanGiaoDich = (props) => {
                 tâm Bảo tồn di tích Cố đô Huế có quyền từ chối tham quan.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 7. Thay đổi, hủy bỏ giao dịch đặt vé tại Trung tâm Bảo tồn di
                 tích Cố đô Huế
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Hiện tại Trung tâm BTDTCĐ chưa hỗ trợ dịch vụ hủy hoặc thay đổi
                 thông tin vé đã thanh toán thành công trên website
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Hệ thống Đặt vé Online của Trung tâm BTDTCĐ có liên kết với rất
                 nhiều đối tác khác, bao gồm Cổng thanh toán VNPay, các ngân hàng
                 nội địa. Việc thanh toán thành công hay không phụ thuộc rất
@@ -172,7 +163,7 @@ const DieuKhoanGiaoDich = (props) => {
                 bạn có thể liên hệ với chúng tôi qua địa chỉ email
                 huedisan@gmail.com để được hỗ trợ.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Sau khi đã xác nhận các thông tin của khách hàng cung cấp về
                 giao dịch không thành công, tùy theo từng loại tài khoản khách
                 hàng sử dụng mà việc hoàn tiền sẽ có thời gian khác nhau:
@@ -198,10 +189,10 @@ const DieuKhoanGiaoDich = (props) => {
                 tham quan, đối tượng muốn tham quan.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 8. Thương hiệu và bản quyền
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Mọi quyền sở hữu trí tuệ (đã đăng ký hoặc chưa đăng ký), nội
                 dung thông tin và tất cả các thiết kế, văn bản, đồ họa, phần
                 mềm, hình ảnh, video, âm nhạc, âm thanh, biên dịch phần mềm, mã
@@ -211,10 +202,10 @@ const DieuKhoanGiaoDich = (props) => {
                 Nam tham gia hoặc là thành viên.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 9. Luật áp dụng và giải quyết tranh chấp
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Các điều kiện, điều khoản và nội dung của trang web này được
                 điều chỉnh và giải thích theo luật pháp Việt Nam. Các tranh chấp
                 phát sinh từ hoặc liên quan đến (các) giao dịch thực hiện tại
@@ -223,8 +214,8 @@ const DieuKhoanGiaoDich = (props) => {
                 được đưa ra xét xử tại Tòa án cấp có thẩm quyền của Việt Nam.
             </p>
 
-            <h5 className={classes['sub-title']}>10. Quy định về bảo mật</h5>
-            <p className={classes['p-content']}>
+            <h5 className="addcart-header ticket-header">10. Quy định về bảo mật</h5>
+            <p >
                 Trang web của chúng tôi coi trọng việc bảo mật thông tin và sử
                 dụng các biện pháp tốt nhất bảo vệ thông tin và việc thanh toán
                 của quý khách. Thông tin của quý khách trong quá trình thanh
@@ -232,7 +223,7 @@ const DieuKhoanGiaoDich = (props) => {
                 thành quá trình đặt hàng, quý khách sẽ thoát khỏi chế độ an
                 toàn.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Quý khách không được sử dụng bất kỳ chương trình, công cụ hay
                 hình thức nào khác để can thiệp vào hệ thống hay làm thay đổi
                 cấu trúc dữ liệu. Trang web cũng nghiêm cấm việc phát tán,
@@ -244,11 +235,11 @@ const DieuKhoanGiaoDich = (props) => {
                 cơ quan có thẩm quyền hoặc theo quy định của pháp luật.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 11. Giải quyết hậu quả do lỗi nhập sai thông tin thương mại tại
                 Trung tâm Bảo tồn di tích Cố đô Huế
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Khách hàng có trách nhiệm cung cấp thông tin đầy đủ và chính xác
                 khi tham gia giao dịch tại Trung tâm Bảo tồn di tích Cố đô Huế.
                 Trong trường hợp khách hàng nhập sai thông tin tại đặt vé, Trung
@@ -259,10 +250,10 @@ const DieuKhoanGiaoDich = (props) => {
                 0234.3523237.
             </p>
 
-            <h5 className={classes['sub-title']}>
+            <h5 className="addcart-header ticket-header">
                 12. Quy định chấm dứt thỏa thuận
             </h5>
-            <p className={classes['p-content']}>
+            <p >
                 Trong trường hợp có bất kỳ thiệt hại nào phát sinh do việc vi
                 phạm Quy Định sử dụng trang web, chúng tôi có quyền đình chỉ
                 hoặc khóa tài khoản của quý khách vĩnh viễn. Nếu quý khách không
@@ -271,12 +262,15 @@ const DieuKhoanGiaoDich = (props) => {
                 tâm Bảo tồn di tích Cố đô Huế thì biện pháp khắc phục duy nhất
                 là ngưng sử dụng dịch vụ của chúng tôi.
             </p>
-            <p className={classes['p-content']}>
+            <p >
                 Xin quý khách lưu ý chỉ mua hàng khi chấp nhận và hiểu rõ những
                 quy định trên. Nếu cần hỗ trợ thêm thông tin, quý khách vui lòng
                 tham khảo tại eticket.hueworldheritage.org.vn
             </p>
-        </div>
+                
+            </div>
+        </Fragment>
+        
     )
 }
 
