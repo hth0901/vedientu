@@ -55,10 +55,7 @@ const SaleProgramDetailPage = (props) => {
      getList1().then(items=>{
         var tam=[...items.newsList]
        
-        for(var i in tam){
-           
-
-            
+        for(var i in tam){  
             if(tam[i].id===params.id)
             {   setimgus(tam[i].imgNews.url)   
                 setList({...tam[i]})

@@ -68,6 +68,8 @@ import TestPage from 'pages/TestPage'
 import SaleProgramDetailPage from 'pages/SaleProgramDetailPage'
 import SalePrograms from 'pages/SaleProgram'
 import SaleProgram from 'pages/SaleProgram'
+import PrinciplePage from 'pages/PrinciplePage'
+import PrincipleDetailPage from 'pages/PrincipleDetailPage'
 const MainContent = (props) => {
     const isLoading = useSelector((state) => state.ui.showLoading)
     const { showLoginPanel, showRegisterPanel } = useSelector(
@@ -100,7 +102,8 @@ const MainContent = (props) => {
                         path="/chuong-trinh-khuyen-mai/:id"
                         element={<SaleProgramDetailPage />}
                     />
-
+                    <Route path="/noi-quy" element={<PrinciplePage></PrinciplePage>}></Route>
+                    <Route path="/noi-quy/:id" element={<PrincipleDetailPage/>}></Route>
                     <Route path="/kham-pha" element={<KhamPha />} />
                     <Route path="/diem-den/*" element={<DestinationPage />} />
                     <Route

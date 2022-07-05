@@ -35,7 +35,7 @@ const dropdownThongTin = [
         routeTitle: 'Khuyến mãi',
     },
     {
-        routePath: 'dat-ve-tham-quan',
+        routePath: 'noi-quy',
         routeTitle: 'Nội quy tham gia',
     },
     {
