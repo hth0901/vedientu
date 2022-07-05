@@ -50,10 +50,10 @@ const MainFooter = (props) => {
 							</ul>
 						</div>
 					</div>
-					<div class="col-md">
-						<div class="ftco-footer-widget mb-4">
-							<h2 class="ftco-heading-2">Thông tin</h2>
-							<ul class="list-unstyled">
+					<div className="col-md">
+						<div className="ftco-footer-widget mb-4">
+							<h2 className="ftco-heading-2">Thông tin</h2>
+							<ul className="list-unstyled">
 								<li><a href="#" className='d-block'>Chương trình khuyến mãi</a></li>
 								<li><a href="#" className='d-block'>Bản đồ các điểm đến</a></li>
 								<li><a href="#" className='d-block'>Giá vé tham quan</a></li>
